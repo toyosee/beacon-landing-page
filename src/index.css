@@ -1,0 +1,32 @@
+@import "tailwindcss";
+/* @import "tailwindcss/components";
+@import "tailwindcss/utilities";
+@layer utilities {
+  .text-glow {
+    text-shadow: 0 0 20px rgba(59, 130, 246, 0.5);
+  }
+
+  .bg-grid-pattern {
+    background-image: linear-gradient(to right, #1e293b 1px, transparent 1px),
+      linear-gradient(to bottom, #1e293b 1px, transparent 1px);
+    background-size: 40px 40px;
+  }
+}
+
+/* Custom Scrollbar 
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #020617;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #1e293b;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #3b82f6;
+} */
