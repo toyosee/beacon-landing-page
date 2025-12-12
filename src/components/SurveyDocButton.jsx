@@ -87,7 +87,24 @@ export default function SurveyDocButton() {
 
             // Part 3
             new Paragraph({
-              text: "Part 3: Futuristic Roadmap",
+              text: "Part 3: User Preference",
+              heading: HeadingLevel.HEADING_1,
+              spacing: { before: 400, after: 200 },
+            }),
+            ...createQuestionBlock("1. Which mode do you prefer for daily use?", [
+                "Dark Mode",
+                "Light Mode",
+                "System Default"
+            ]),
+            ...createQuestionBlock("2. How far away is 'relevant' to you?", [
+                "Walking distance (1km)",
+                "Neighborhood (5km)",
+                "Commute range (20km+)"
+            ]),
+            
+            // Part 4
+            new Paragraph({
+              text: "Part 4: Futuristic Roadmap",
               heading: HeadingLevel.HEADING_1,
               spacing: { before: 400, after: 200 },
             }),
@@ -105,9 +122,9 @@ export default function SurveyDocButton() {
                 "SOS Panic Beacon"
             ]),
 
-            // Part 4
+            // Part 5
             new Paragraph({
-              text: "Part 4: User Personas",
+              text: "Part 5: User Personas",
               heading: HeadingLevel.HEADING_1,
               spacing: { before: 400, after: 200 },
             }),

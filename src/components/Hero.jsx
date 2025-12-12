@@ -2,6 +2,14 @@ import React from 'react';
 import { Download, ShieldCheck, Smartphone } from 'lucide-react';
 
 export default function Hero() {
+
+    const scrollToDownload = () => {
+    const element = document.getElementById('download');
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+    };
+  
   const trustedReporters = [
     { name: "Alice M.", avatar: "https://ui-avatars.com/api/?name=Alice+M&background=0D8ABC&color=fff" },
     { name: "Brian K.", avatar: "https://ui-avatars.com/api/?name=Brian+K&background=F39C12&color=fff" },
@@ -30,7 +38,9 @@ export default function Hero() {
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 pt-4">
-            <button className="flex items-center justify-center gap-3 bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-xl font-bold transition-all shadow-lg shadow-blue-900/20 group">
+            <button
+              onClick={scrollToDownload}
+              className="flex items-center justify-center gap-3 bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-xl font-bold transition-all shadow-lg shadow-blue-900/20 group">
               <Download className="w-5 h-5 group-hover:translate-y-1 transition-transform" />
               <span>Get the App</span>
             </button>
