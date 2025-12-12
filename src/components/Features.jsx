@@ -40,7 +40,7 @@ export default function Features() {
     <section id="features" className="py-24 px-6 bg-slate-900/50">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-5xl font-bold mb-4">Why Beacon?</h2>
+          <h2 className="text-3xl md:text-5xl font-bold mb-4">Why Beacon<span className='text-blue-500'>IO</span>?</h2>
           <p className="text-slate-400 max-w-2xl mx-auto">
             Built for resilience. Whether it's finding resources during scarcity or navigating chaos, we've got you covered.
           </p>

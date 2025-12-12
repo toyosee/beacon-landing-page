@@ -10,7 +10,7 @@ export default function Contact() {
           
           {/* Info Side */}
           <div>
-            <h2 className="text-3xl md:text-5xl font-bold mb-6">Get in Touch</h2>
+            <h2 className="text-3xl md:text-5xl font-bold mb-6">Get in <span className="text-blue-500">Touch</span></h2>
             <p className="text-slate-400 text-lg mb-12">
               Have questions, partnership inquiries, or feedback? We'd love to hear from you. Our team usually responds within 2 hours.
             </p>

@@ -1,8 +1,14 @@
-
 import React from 'react';
-import { Download, ShieldCheck, Map, Smartphone } from 'lucide-react';
+import { Download, ShieldCheck, Smartphone } from 'lucide-react';
 
 export default function Hero() {
+  const trustedReporters = [
+    { name: "Alice M.", avatar: "https://ui-avatars.com/api/?name=Alice+M&background=0D8ABC&color=fff" },
+    { name: "Brian K.", avatar: "https://ui-avatars.com/api/?name=Brian+K&background=F39C12&color=fff" },
+    { name: "Catherine L.", avatar: "https://ui-avatars.com/api/?name=Catherine+L&background=27AE60&color=fff" },
+    { name: "David S.", avatar: "https://ui-avatars.com/api/?name=David+S&background=8E44AD&color=fff" },
+  ];
+
   return (
     <section className="pt-32 pb-20 px-6 relative">
       <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-16 items-center">
@@ -36,10 +42,13 @@ export default function Hero() {
 
           <div className="pt-8 flex items-center gap-4 text-sm text-slate-500">
             <div className="flex -space-x-2">
-              {[1,2,3,4].map(i => (
-                <div key={i} className="w-8 h-8 rounded-full bg-slate-700 border-2 border-slate-950 flex items-center justify-center text-xs text-white">
-                  {String.fromCharCode(64+i)}
-                </div>
+              {trustedReporters.map((reporter, i) => (
+                <img
+                  key={i}
+                  src={reporter.avatar}
+                  alt={reporter.name}
+                  className="w-8 h-8 rounded-full border-2 border-slate-950 object-cover"
+                />
               ))}
             </div>
             <p>Join the network of trusted reporters today.</p>

@@ -17,7 +17,7 @@ export default function About() {
           </h2>
           
           <p className="text-slate-400 text-lg leading-relaxed">
-            Beacon was born from a simple idea: information is safety. In times of scarcity or uncertainty, your neighbor is your best source of truth.
+            BeaconIO was born from a simple idea: information is safety. In times of scarcity or uncertainty, your neighbor is your best source of truth.
           </p>
 
           <p className="text-slate-400 text-lg leading-relaxed">

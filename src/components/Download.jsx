@@ -13,7 +13,7 @@ export default function Download() {
                 Ready to join the <span className="text-blue-500">Community?</span>
             </h2>
             <p className="text-lg text-slate-400 mb-12 max-w-2xl mx-auto">
-                Download Beacon today and start contributing to a safer, more informed neighborhood. Available now on iOS and Android.
+                Download BeaconIO today and start contributing to a safer, more informed neighborhood. Available now on iOS and Android.
             </p>
 
             <div className="flex flex-col sm:flex-row justify-center gap-6">
